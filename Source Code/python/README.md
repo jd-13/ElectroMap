@@ -26,7 +26,7 @@
 [ ] localfitt.m
 [ ] mapsbaby.m
 [ ] mapsbabyonepix.m
-[ ] maskload.m
+[+] maskload.m
 [+] master_vel.m
 [ ] phasemapping.m
 [ ] pixelinfo.m

@@ -10,7 +10,7 @@ def master_vel(XYT, MINt, MAXt, MINV, MAXV, winsize, wint):
 
     Parameters
     ----------
-    XYT : numpy matrix
+    XYT : numpy array
         A matrix with rows consisting of the x,y,t locations of activations (mm,mm,ms)
     MINt :
         Start time of subset of data to analyze
