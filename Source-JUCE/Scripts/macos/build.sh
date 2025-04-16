@@ -6,9 +6,10 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null 2>&1 && pwd )"
 
 echo "=== Downloading JUCE ==="
 JUCE_VERSION=8.0.7
+ZIP_OUTPUT_DIR=$SCRIPT_DIR/../..
 wget https://github.com/juce-framework/JUCE/releases/download/$JUCE_VERSION/juce-$JUCE_VERSION-osx.zip \
-     -P $SCRIPT_DIR/../..
-unzip $SCRIPT_DIR/../../juce-$JUCE_VERSION-osx.zip
+     -P $ZIP_OUTPUT_DIR
+unzip $SCRIPT_DIR/../../juce-$JUCE_VERSION-osx.zip -d $ZIP_OUTPUT_DIR
 
 echo "=== Generating project ==="
 PROJECT_DIR=$SCRIPT_DIR/../../Projects
