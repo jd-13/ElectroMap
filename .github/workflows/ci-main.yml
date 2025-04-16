@@ -25,8 +25,8 @@ jobs:
       - name: SetupMSBuild
         uses: microsoft/setup-msbuild@v1.0.2
       - name: RunBuild
-        shell: pwsh
-        run: Source-JUCE\Scripts\windows\build.ps1
+        shell: bat
+        run: Source-JUCE\Scripts\windows\build.bat
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
