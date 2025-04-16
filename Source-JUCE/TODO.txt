@@ -1,3 +1,8 @@
-- Windows CI build
+Goals:
+- Easy to package and deploy on Windows, macOS, and Linux
+- Open-source dependencies only
+- Accessible for many developers (ie. mainstream languages and frameworks)
+
+Tasks:
 - C++ unit tests CI
 - JS unit tests CI
