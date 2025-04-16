@@ -16,8 +16,7 @@ $JUCE_HOME = Join-Path -Path $SCRIPT_DIR -ChildPath "..\..\JUCE"
 
 
 & "$JUCE_HOME\Projucer.exe" --set-global-search-path windows defaultJuceModulePath "$JUCE_HOME\modules"
-& "$JUCE_HOME\Projucer.exe" --status "$PROJECT_DIR\ElectroMap\ElectroMap.jucer"
-& "$JUCE_HOME\Projucer.exe" --resave "$PROJECT_DIR\ElectroMap\ElectroMap.jucer"
+& "$JUCE_HOME\Projucer.exe" --resave --fix-missing-dependencies "$PROJECT_DIR\ElectroMap\ElectroMap.jucer"
 
 Write-Output "=== Starting ElectroMap build ==="
 msbuild -version
