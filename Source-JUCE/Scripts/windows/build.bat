@@ -11,7 +11,7 @@ set PROJECT_DIR=%SCRIPT_DIR%..\..\Projects
 %JUCE_HOME%\Projucer --set-global-search-path windows defaultJuceModulePath %JUCE_HOME%\modules
 %JUCE_HOME%\Projucer --resave %PROJECT_DIR%\ElectroMap\ElectroMap.jucer
 
-Write-Output "=== Starting ElectroMap build ==="
+ECHO "=== Starting ElectroMap build ==="
 msbuild -version
 cd %PROJECT_DIR%\ElectroMap\Builds\VisualStudio2019
 msbuild ElectroMap.sln /p:Configuration=Release /p:Platform=x64 || exit /b
