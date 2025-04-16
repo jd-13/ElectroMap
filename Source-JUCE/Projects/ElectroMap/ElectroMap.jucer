@@ -38,11 +38,11 @@
         <CONFIGURATION isDebug="0" name="Release" targetName="ElectroMap"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_core" path="../../../../../../SDKs/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../../../../../SDKs/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../../../../../SDKs/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../../../../../SDKs/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../../../../../SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
       </MODULEPATHS>
     </VS2019>
     <XCODE_MAC targetFolder="Builds/MacOSX">
