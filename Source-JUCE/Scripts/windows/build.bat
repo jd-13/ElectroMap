@@ -17,8 +17,8 @@ cd %PROJECT_DIR%\ElectroMap\Builds\VisualStudio2019
 msbuild ElectroMap.sln /p:Configuration=Release /p:Platform=x64 || exit /b
 
 ECHO "=== Collecting artefacts ==="
-cd %PROJECT_DIR%\ElectroMap\Builds\VisualStudio2019\x64\Release\ElectroMap
-dir 
+cd %PROJECT_DIR%\ElectroMap\Builds\VisualStudio2019\x64\Release
+dir
 cd %SCRIPT_DIR%
 mkdir -p dist
 cd dist
