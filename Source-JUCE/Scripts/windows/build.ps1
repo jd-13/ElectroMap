@@ -20,10 +20,10 @@ $JUCE_HOME = Join-Path -Path $SCRIPT_DIR -ChildPath "..\..\JUCE"
 Write-Output "=== Starting ElectroMap build ==="
 msbuild -version
 
-cd "$PROJECT_DIR\Projects\ElectroMap\Builds\VisualStudio2019"
+cd "$PROJECT_DIR\ElectroMap\Builds\VisualStudio2019"
 msbuild "ElectroMap.sln" /p:Configuration=Release /p:Platform=x64
 
 Write-Output "=== Collecting artefacts ==="
 cd "$PROJECT_DIR"
 New-Item -ItemType Directory -Force -Path "$SCRIPT_DIR/dist"
-Copy-Item "$PROJECT_DIR\Projects\ElectroMap\Builds\VisualStudio2019\x64\Release\ElectroMap.exe" "$SCRIPT_DIR\dist\ElectroMap.exe"
+Copy-Item "$PROJECT_DIR\ElectroMap\Builds\VisualStudio2019\x64\Release\ElectroMap.exe" "$SCRIPT_DIR\dist\ElectroMap.exe"
