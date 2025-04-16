@@ -1,0 +1,3 @@
+- Windows CI build
+- C++ unit tests CI
+- JS unit tests CI

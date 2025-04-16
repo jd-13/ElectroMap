@@ -1,0 +1,17 @@
+name: CI Main
+
+on: [push, pull_request]
+
+jobs:
+  BuildMacOS:
+    runs-on: macos-15
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: RunBuild
+        run: Source-JUCE/Scripts/macos/build.sh
+      - uses: actions/upload-artifact@v4
+        if: ${{ success() }}
+        with:
+          name: ElectroMap-macOS
+          path: Source-JUCE/Scripts/macos/dist
