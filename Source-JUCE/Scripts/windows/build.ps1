@@ -14,6 +14,8 @@ Write-Output "=== Generating project ==="
 $PROJECT_DIR = Join-Path -Path $SCRIPT_DIR -ChildPath "..\..\Projects"
 $JUCE_HOME = Join-Path -Path $SCRIPT_DIR -ChildPath "..\..\JUCE"
 
+Get-ChildItem -Path "$JUCE_HOME" -Recurse
+
 & "$JUCE_HOME\Projucer.exe" --set-global-search-path windows defaultJuceModulePath "$JUCE_HOME\modules"
 & "$JUCE_HOME\Projucer.exe" --resave "$PROJECT_DIR\ElectroMap\ElectroMap.jucer"
 
